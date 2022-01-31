@@ -16,72 +16,81 @@
         <h1>DrivenEats</h1>
         <p> Sua comida em 6 minutos </p>
     </header>
-     <section > 
+     <section data-identifier="dishes"> 
         <h2>Primeiro, seu prato</h2>
         <div class="caixa_pratos">
-            <div class="prato">
+            <div class="prato" data-identifier="food-option" onclick="escolherPrato(this,'Frango')">
                 <img src="imagens/frango_yin_yang 1.png" alt="1° opçao de prato">
-                <p>Frango Yin Yang</p>
+                <p data-identifier="food-title">Frango Yin Yang</p>
                 <span>Um pouco de batata, um pouco de salada</span>
-                <p>R$ 14,90</p>
+                <p data-identifier="food-price">R$ 14,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
-            <div class="prato">
+            <div class="prato " data-identifier="food-option" onclick="escolherPrato(this,'Lasanha')">
                 <img src="imagens/frango_yin_yang 1.png" alt="2° opçao de prato">
-                <p>Lasanha</p>
+                <p data-identifier="food-title">Lasanha</p>
                 <span>Um pouco de batata, um pouco de salada</span>
-                <p>R$ 14,90</p>
+                <p data-identifier="food-price">R$ 15,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
-            <div class="prato">
+            <div class="prato" data-identifier="food-option" onclick="escolherPrato(this,'Nhoque')">
                 <img src="imagens/frango_yin_yang 1.png" alt="3° opçao de prato">
-                <p>Nhoque</p>
+                <p data-identifier="food-title">Nhoque</p>
                 <span>Um pouco de batata, um pouco de salada</span>
-                <p>R$ 14,90</p>
+                <p data-identifier="food-price">R$ 17,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
         </div>
     </section> 
-    <section>     
+    <section data-identifier="drinks">     
         <h2>Agora, sua bebida</h2>
         <div class="caixa_bebidas">
-            <div class="bebida">
+            <div class="bebida" onclick="escolherBebida(this,'Coca cola')">
                 <img src="imagens/coquinha_gelada 1.png" alt="primeira opção de bebida">
                 <p>Coquinha gelada</p>
                 <span>lata 350 ml</span>
                 <p>R$ 4,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
-            <div class="bebida">
+            <div class="bebida" onclick="escolherBebida(this,'Suco')">
                 <img src="imagens/coquinha_gelada 1.png" alt="primeira opção de bebida">
-                <p>Coquinha gelada</p>
+                <p>Suco de laranja</p>
                 <span>lata 350 ml</span>
-                <p>R$ 4,90</p>
+                <p>R$ 6,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
-            <div class="bebida">
+            <div class="bebida" onclick="escolherBebida(this,'Chá')">
                 <img src="imagens/coquinha_gelada 1.png" alt="primeira opção de bebida">
-                <p>Coquinha gelada</p>
+                <p>Chá gelado</p>
                 <span>lata 350 ml</span>
-                <p>R$ 4,90</p>
+                <p>R$ 3,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
         </div>
     </section>  
-    <section>
+    <section data-identifier="desserts">
         <h2>Por fim, sua sobremesa</h2>
         <div class="caixa_sobremesas">
-            <div class="sobremesa">
+            <div class="sobremesa" onclick="escolherSobremesa(this,'Pudim')">
                 <img src="imagens/pudim 1.png" alt="1° opção de sobremesa">
                 <p>Pudim</p>
                 <span>Apenas pudim</span>
                 <p>R$ 7,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
-            <div class="sobremesa">
+            <div class="sobremesa" onclick="escolherSobremesa(this,'Pudim')">
                 <img src="imagens/pudim 1.png" alt="2° opção de sobremesa">
                 <p>Pudim</p>
                 <span>Apenas pudim</span>
-                <p>R$ 7,90</p>
+                <p>R$ 8,90</p>
+                <img class="verificado" src="imagens/Vector.png"  alt="verificado">
             </div>
-            <div class="sobremesa">
+            <div class="sobremesa" onclick="escolherSobremesa(this,'Pudim')">
                 <img src="imagens/pudim 1.png" alt="3° opção de sobremesa">
                 <p>Pudim</p>
                 <span>Apenas pudim</span>
-                <p>R$ 7,90</p>
+                <p>R$ 9,90</p>
+                <img class="verificado"  src="imagens/Vector.png"  alt="verificado">
             </div>
         </div>
     </section>  
