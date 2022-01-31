@@ -90,6 +90,7 @@ h2{
     margin-left: 11px;
     width: 144px;
     height: 87px;
+    border-radius:9px;
 }
 .prato p {
     display: flex;
@@ -139,8 +140,15 @@ h2{
     border: 3px solid #FFFFFF;
 }
 .bebida img{
+  
+    position: relative;
+    display: flex;
+    position: relative;
     margin-top:18px;
     margin-left: 15px;
+    width: 144px;
+    height: 87px;
+    border-radius:9px;
 }
 .bebida p{
     width: 139px;
@@ -228,7 +236,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.botaofooter {
+.botaoselecionar {
     position: absolute;
     width: 88vw;
     height: 61px;
@@ -236,7 +244,23 @@ footer{
     border-radius: 50px;
     border: 0px;
 }
-.botaofooter p{ 
+.botaoativo{
+    position: absolute;
+    width: 88vw;
+    height: 61px;
+    background: lightgreen;
+    border-radius: 50px;
+    border: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    font-style: black;
+}
+.botaoselecionar p{ 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -246,13 +270,27 @@ footer{
     letter-spacing: 0.018em;
     color: #FFFFFF;
 }
+.botaoativo p{ 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: black;
+}
 /* classes que aparecem */
 .selecionado{
 
 border-color:lightgreen;
 }
+.escondido{
+    display: none;
+}
 
-img.verificado{
+.verificado img{
+    box-sizing: border-box;
     position: relative;
     border-radius: 50%;
     bottom: 40px;
@@ -260,4 +298,3 @@ img.verificado{
     width: 16px;
     height: 16px;
 }
-
