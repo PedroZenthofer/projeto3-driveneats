@@ -244,22 +244,6 @@ footer{
     border-radius: 50px;
     border: 0px;
 }
-.botaoativo{
-    position: absolute;
-    width: 88vw;
-    height: 61px;
-    background: lightgreen;
-    border-radius: 50px;
-    border: 0px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.018em;
-    font-style: black;
-}
 .botaoselecionar p{ 
     font-family: Roboto;
     font-style: normal;
@@ -270,7 +254,16 @@ footer{
     letter-spacing: 0.018em;
     color: #FFFFFF;
 }
-.botaoativo p{ 
+
+
+/* classes que aparecem */
+.botaoativo{
+    position: absolute;
+    width: 88vw;
+    height: 61px;
+    background: rgba(50, 183, 47, 1);
+    border-radius: 50px;
+    border: 0px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -278,12 +271,11 @@ footer{
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.018em;
-    color: black;
+    color: #FFFFFF;
 }
-/* classes que aparecem */
 .selecionado{
 
-border-color:lightgreen;
+border-color:rgba(50, 183, 47, 1);
 }
 .escondido{
     display: none;

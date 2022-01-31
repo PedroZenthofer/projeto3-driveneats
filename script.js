@@ -1,16 +1,16 @@
 
 let suaComida,suaSobremesa, suaBebida = null;
-let precoComida, precoBebida, precoSobremesa = 0; 
+let precoComida, precoBebida, precoSobremesa, precoTotal= 0; 
 
 
 function ativarBotao(){
    const botao = document.querySelector(".botaoselecionar");
-       if(precoComida!=0 && precoBebida!=0 && precoSobremesa != 0){
+       if(suaComida!=null && suaBebida!=null && suaSobremesa !=null){
            botao.classList.remove("botaoselecionar");
            botao.classList.add("botaoativo");
-           botao.innerHTML = "Fechar pedido";
+           botao.innerHTML = "Finalizar pedido";
        }
-   
+    
 }
 
 function escolherPrato(botao, nomeExibicao){
@@ -29,11 +29,8 @@ function escolherPrato(botao, nomeExibicao){
     }else{
         precoComida = 17.90;
     }
-    ativarBotao()
+    ativarBotao();
 }
-
-
-
 
 
 function escolherBebida(botao,nomeExibicao){
@@ -46,13 +43,13 @@ function escolherBebida(botao,nomeExibicao){
     
     //definir o preço da bebida
     if(suaBebida === "Coca cola"){
-        precoBebida = 14.90;
+        precoBebida = 4.90;
     }else if(suaBebida === "suco"){
-        precoBebida = 15.90;
+        precoBebida = 6.90;
     }else{
-        precoBebida = 17.90;
+        precoBebida = 3.90;
     }
-    ativarBotao()
+    ativarBotao();
 }
 
 
@@ -66,11 +63,21 @@ function escolherSobremesa(botao, nomeExibicao){
     
     //definir o preço da sobremesa
     if(suaSobremesa === "Pudim"){
-        precoSobremesa = 14.90;
-    }else if(suaSobremesa === "suco"){
-        precoSobremesa = 15.90;
+        precoSobremesa = 7.90;
+    }else if(suaSobremesa === "Pudim seco"){
+        precoSobremesa = 5.90;
     }else{
-        precoSobremesa = 17.90;
+        precoSobremesa = 6.90;
     }
-    ativarBotao()
+    ativarBotao();
+}
+
+
+function enviarPedido(){
+    if (precoComida != 0 && precoBebida != 0 && precoSobremesa != 0){
+        precoTotal = precoComida + precoBebida + precoSobremesa;
+        precoTotal = precoTotal.toFixed(2);
+        let mensagemWhats= `Olá, gostaria de fazer o pedido:\n- Prato: ${suaComida}\n- Bebida: ${suaBebida}\n- Sobremesa: ${suaSobremesa}\nTotal: R$ ${precoTotal}\n`;
+        window.open(`https://wa.me/5515997901464?text=${encodeURIComponent(mensagemWhats)}`);
+    }
 }
