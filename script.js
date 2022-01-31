@@ -77,7 +77,9 @@ function enviarPedido(){
     if (precoComida != 0 && precoBebida != 0 && precoSobremesa != 0){
         precoTotal = precoComida + precoBebida + precoSobremesa;
         precoTotal = precoTotal.toFixed(2);
-        let mensagemWhats= `Olá, gostaria de fazer o pedido:\n- Prato: ${suaComida}\n- Bebida: ${suaBebida}\n- Sobremesa: ${suaSobremesa}\nTotal: R$ ${precoTotal}\n`;
+        let nomeUsuario = prompt("Qual o seu nome?");
+        let endereco = prompt("qual o seu endereço?")
+        let mensagemWhats= `Olá, gostaria de fazer o pedido:\n- Prato: ${suaComida}\n- Bebida: ${suaBebida}\n- Sobremesa: ${suaSobremesa}\nTotal: R$ ${precoTotal}\n \n Nome: ${nomeUsuario}\n Endereço: ${endereco}`;
         window.open(`https://wa.me/5515997901464?text=${encodeURIComponent(mensagemWhats)}`);
     }
 }
