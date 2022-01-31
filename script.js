@@ -8,7 +8,7 @@ function ativarBotao(){
        if(suaComida!=null && suaBebida!=null && suaSobremesa !=null){
            botao.classList.remove("botaoselecionar");
            botao.classList.add("botaoativo");
-           botao.innerHTML = "Finalizar pedido";
+           botao.innerHTML = "Fechar pedido";
        }
     
 }
